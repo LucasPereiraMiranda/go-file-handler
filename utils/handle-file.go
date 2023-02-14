@@ -2,6 +2,7 @@ package utils
 
 import (
 	"errors"
+	"io/fs"
 	"log"
 	"os"
 )
@@ -44,4 +45,15 @@ func WriteFileContent(filePath string, content string) {
 	if _, error := file.WriteString(content); error != nil {
 		log.Fatal(error)
 	}
+}
+
+func GetFileStats(filePath string) fs.FileInfo {
+	CheckFileExists(filePath)
+	fileStats, error := os.Stat(filePath)
+
+	if error != nil {
+		log.Fatal(error)
+	}
+
+	return fileStats
 }
