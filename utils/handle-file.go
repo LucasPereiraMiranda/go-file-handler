@@ -3,6 +3,7 @@ package utils
 import (
 	"errors"
 	"io/fs"
+	"io/ioutil"
 	"log"
 	"os"
 )
@@ -56,4 +57,14 @@ func GetFileStats(filePath string) fs.FileInfo {
 	}
 
 	return fileStats
+}
+
+func ReadFileContent(filePath string) string {
+	CheckFileExists(filePath)
+	content, error := ioutil.ReadFile(filePath)
+
+	if error != nil {
+		log.Fatal(error)
+	}
+	return string(content)
 }
