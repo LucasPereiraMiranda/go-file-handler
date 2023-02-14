@@ -32,3 +32,16 @@ func DeleteFile(filePath string) {
 		log.Fatal(error)
 	}
 }
+
+func WriteFileContent(filePath string, content string) {
+
+	file, error := os.OpenFile(filePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if error != nil {
+		log.Fatal(error)
+	}
+	defer file.Close()
+
+	if _, error := file.WriteString(content); error != nil {
+		log.Fatal(error)
+	}
+}
