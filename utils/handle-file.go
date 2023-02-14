@@ -23,3 +23,12 @@ func CheckFileExists(filePath string) bool {
 	}
 	return true
 }
+
+func DeleteFile(filePath string) {
+	CheckFileExists(filePath)
+
+	error := os.Remove(filePath)
+	if error != nil {
+		log.Fatal(error)
+	}
+}
