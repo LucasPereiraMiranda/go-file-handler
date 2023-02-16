@@ -37,7 +37,7 @@ This project it is being developed to learn the basis of Go programming language
 # clone this repo
 $ https://github.com/LucasPereiraMiranda/go-fintechs-api
 
-# build dependencies in go module:
+# get dependencies in go module:
 $ go get
 
 
