@@ -29,7 +29,7 @@ Go file handler app was developed with these technologies
 
 ## 💻 Project
 
-This project it is being developed to learn the basis of Go programming language development. I am using this project to have contact with go file system.
+This project it is being developed to learn the basis of Go programming language. This project is developed to have contact with go file system.
 
 ## :boom: Installation
 
@@ -37,7 +37,7 @@ This project it is being developed to learn the basis of Go programming language
 # clone this repo
 $ https://github.com/LucasPereiraMiranda/go-fintechs-api
 
-# build dependencies in go module:
+# get dependencies in go module:
 $ go get
 
 
