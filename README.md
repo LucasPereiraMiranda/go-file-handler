@@ -15,6 +15,10 @@
   <a href="https://github.com/LucasPereiraMiranda/go-file-handler/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/LucasPereiraMiranda/go-file-handler">
   </a>
+
+  <a href="https://github.com/LucasPereiraMiranda/go-file-handler/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/LucasPereiraMiranda/go-file-handler">
+  </a>
 </p>
 
 <br>
